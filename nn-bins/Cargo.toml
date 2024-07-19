@@ -1,0 +1,42 @@
+[package]
+name = "nn-bins"
+version = "0.1.0"
+edition = "2021"
+authors = ["MathxH Chen <brainfvck@foxmail.com>"]
+description = "nn.rs Neural network tiny demo test; nn-image.rs Train data set visualizer"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "nn"
+path = "src/nn.rs"
+
+[[bin]]
+name = "nn-image"
+path = "src/nn_image.rs"
+
+[[bin]]
+name = "nn-scaler"
+path = "src/nn_data_scaler.rs"
+
+[[bin]]
+name = "nn-mnist-zero"
+path = "src/nn_mnist_train_part_zero.rs"
+
+[[bin]]
+name = "nn-mnist-one"
+path = "src/nn_mnist_train_part_one.rs"
+
+[[bin]]
+name = "nn-mnist-two"
+path = "src/nn_mnist_train_part_two.rs"
+
+[[bin]]
+name = "handwritten-digit-recognition"
+path = "src/handwritten_recognition.rs"
+
+[dependencies]
+nn = { path = "../nn" }
+image = "0.24.6"
+csv = "1.2.1"
+ndarray = "0.15.6"

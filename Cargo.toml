@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "nn",
+    "nn-bins",
+]
+
